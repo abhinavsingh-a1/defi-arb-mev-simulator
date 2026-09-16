@@ -1,0 +1,26 @@
+[profile.default]
+src = "contracts"
+out = "out"
+libs = ["lib"]
+test = "test"
+solc_version = "0.8.37"
+optimizer = true
+optimizer_runs = 200
+
+# Solidity >=0.8.25 defaults to targeting the Cancun EVM hardfork (MCOPY,
+# transient storage opcodes, etc). If deploying to a private/local network
+# (e.g. an older Besu build) that doesn't support Cancun, uncomment and set
+# this to whatever hardfork that network actually supports:
+# evm_version = "paris"
+
+# Points forge at your local network for deploy scripts.
+# Override per-environment with --rpc-url or the RPC_URL env var.
+# eth_rpc_url = "http://127.0.0.1:8545"
+
+[fmt]
+line_length = 100
+tab_width = 4
+bracket_spacing = true
+
+[fuzz]
+runs = 256

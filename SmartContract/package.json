@@ -1,0 +1,15 @@
+{
+  "name": "defi-arb-mev-simulator-bots",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Off-chain scanners and oracle helper services for defi-arb-mev-simulator.",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "push-realtime-price": "node bot/oracle-service/realtime-price-pusher.js"
+  },
+  "dependencies": {
+    "ethers": "^6.16.0"
+  }
+}
