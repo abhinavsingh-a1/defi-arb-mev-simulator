@@ -1,0 +1,19 @@
+output "id" {
+  value = aws_instance.this.id
+}
+
+output "public_ip" {
+  value = aws_instance.this.public_ip
+}
+
+output "private_ip" {
+  value = aws_instance.this.private_ip
+}
+
+output "name" {
+  value = var.name
+}
+
+output "role" {
+  value = var.role
+}
